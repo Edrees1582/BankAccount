@@ -17,11 +17,17 @@ public class BankAccount {
         this.balance = balance;
     }
 
-	public void withdraw(double amount) {
-	balance -= amount;
-        System.out.print("Account Owner: " + ownerName + "\nWithdrawn $" + amount);
+	public void deposit(double amount) {
+        balance += amount;
+        System.out.print("Account Owner: " + ownerName + "\nDeposited $" + amount);
         System.out.println(", Current balance: $" + balance);
     }
+
+	public void withdraw(double amount) {
+		balance -= amount;
+        System.out.print("Account Owner: " + ownerName + "\nWithdrawn $" + amount);
+		System.out.println(", Current balance: $" + balance);
+	}
 
     public String getOwnerName() {
         return ownerName;
