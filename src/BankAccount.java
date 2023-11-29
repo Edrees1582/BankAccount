@@ -27,13 +27,11 @@ public class BankAccount {
 		if (balance < amount) {
             System.out.print("Account Owner: " + ownerName + "\nUnsuccessful withdrawal of $" + amount);
             System.out.println(", Current balance: $" + balance);
-            return false;
         }
         else {
             balance -= amount;
             System.out.print("Account Owner: " + ownerName + "\nWithdrawn $" + amount);
             System.out.println(", Current balance: $" + balance);
-            return true;
         }
 	}
 
